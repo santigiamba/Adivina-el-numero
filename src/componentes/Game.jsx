@@ -44,7 +44,7 @@ function Game() {
         className="input-field"
       />
       <button onClick={handleGuess} className="guess-button">Adivinar</button>
-      <Feedback feedback={feedback} />
+      <div className="feedback-message">{feedback}</div> {/* Aquí */}
       <div>
         <h2>Intentos: {attempts.length}</h2>
         <ul>
@@ -58,3 +58,4 @@ function Game() {
 }
 
 export default Game;
+
