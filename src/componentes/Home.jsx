@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Bienvenido al juego de Adivina el Número</h1>
+      <h1>Bienvenido a este juego para adivinar un numero</h1>
       <input ref={nameRef} type="text" placeholder="Ingresa tu nombre" />
       <button onClick={handleStartGame}>Comenzar Juego</button>
     </div>

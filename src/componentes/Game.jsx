@@ -31,7 +31,7 @@ function Game() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>¡Hola, {playerName}! Adivina el número entre 1 y 100</h1>
+      <h1> Buenas {playerName}, Adivina el número entre 1 y 100</h1>
       <div 
         style={{
           width: '200px', 
