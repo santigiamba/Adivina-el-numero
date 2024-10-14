@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Color de fondo suave */
+  }
+  
+  h1 {
+    color: #2c3e50; /* Color de texto del título */
+  }
+  
+  .name-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2980b9; /* Borde azul */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    background-color: #2980b9; /* Botón azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background-color: #3498db; /* Color al pasar el mouse */
+  }
+  

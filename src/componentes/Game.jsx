@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Feedback from './Feedback';
+import '../styles/Game.css';
 
 function Game() {
   const { state } = useLocation();
@@ -30,19 +31,9 @@ function Game() {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1> Buenas {playerName}, Adivina el número entre 1 y 100</h1>
-      <div 
-        style={{
-          width: '200px', 
-          height: '200px', 
-          margin: '20px auto', 
-          border: '2px solid black', 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'center', 
-          fontSize: '50px'
-        }}>
+    <div className="game-container">
+      <h1>¡Hola, {playerName}! Adivina el número entre 1 y 100</h1>
+      <div className="square">
         {isCorrect ? randomNumber : '?'}
       </div>
       <input 
@@ -50,8 +41,9 @@ function Game() {
         value={guess} 
         onChange={(e) => setGuess(e.target.value)} 
         placeholder="Tu adivinanza" 
+        className="input-field"
       />
-      <button onClick={handleGuess}>Adivinar</button>
+      <button onClick={handleGuess} className="guess-button">Adivinar</button>
       <Feedback feedback={feedback} />
       <div>
         <h2>Intentos: {attempts.length}</h2>
